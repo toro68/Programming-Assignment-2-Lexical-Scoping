@@ -1,5 +1,6 @@
+# Programming Assignment 2: Lexical ScopingProgramming
 
-# This Programming Assignment will take advantage of the scoping rules of the R language 
+# This Programming Assignment take advantage of the scoping rules of the R language 
 # and how they can be manipulated to preserve state inside of an R object.
 
 # Matrix inversion is usually a costly computation and there may be some benefit
@@ -27,8 +28,8 @@ makeCacheMatrix <- function(x = matrix()) {
 # cacheSolve returns the inverse of the matrix. It first checks if
 # the inverse has already been computed. If so, it gets the result and skips the
 # computation. If not, it computes the inverse, sets the value in the cache via
-# setinverse function.
-# This function assumes that the matrix is always invertible.
+# setinverse function. This function assumes that the matrix is always invertible.
+
 cacheSolve <- function(x, ...) {
     inv <- x$getinverse()
     if(!is.null(inv)) {
